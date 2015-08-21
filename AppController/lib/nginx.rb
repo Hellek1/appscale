@@ -357,7 +357,7 @@ map $scheme $ssl {
 }
 
 server {
-    listen #{http_port};
+    listen [::]:#{http_port};
     server_name #{my_public_ip}-#{app_name};
     #root /var/apps/#{app_name}/app;
     # Uncomment these lines to enable logging, and comment out the following two
